@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="brisket, bbq, food, homemade food, homestyle bbq, bbq sauce">
+    <meta name="discription" content="homestyle brisket, homemade bbq sauce and more">
+    <meta name="author" content="Tyler Gore">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Rye&display=swap" rel="stylesheet">
+   <title> R&N Smokin Sweet Savour BBQ Menu</title>
+<style>
+    /* background image */
+    body{
+        background-image: url("https://static.vecteezy.com/system/resources/previews/007/287/322/non_2x/burnt-wooden-board-black-charcoal-wood-texture-burned-barbecue-background-free-photo.jpg");
+        background-repeat:repeat-y;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;       
+      }
+    /* obveously this is the header */
+    .header{
+        background-color: black;
+        font-family: 'Cinzel', serif;
+        font-family: 'Rye', cursive;
+        text-align: center;
+        color:darkgoldenrod;
+        width: 100%;
+        height: 45px;   
+      }
+    main {
+        flex: 1;
+    }
+    .nav {
+  background-color: black;
+  overflow: hidden;
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0px;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color:darkgoldenrod;
+  color: black;
+}
+.footer{
+    background-color: black;
+    margin-top: auto;
+    position: relative;
+    bottom: -600px;
+    padding: 20px;
+    display: block; 
+    width: 100%;  
+  }
+
+.centerimg{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.image-container {
+  position: relative; /* set position to relative to create a positioning context for the child elements */
+}
+
+.text-overlay {
+  position: absolute; /* set position to absolute to position the element relative to its closest positioned ancestor */
+  top: 45%; /* set the top property to 50% to position the element at the center of the container */
+  left: 40%; /* set the left property to 50% to position the element at the center of the container */
+  transform: translate(-50%, -50%); /* use the transform property to center the element horizontally and vertically */
+  z-index: 1; /* set the z-index property to a higher value than the image element to ensure the text appears on top */
+  text-align: center;/* center the text horizontally within the element */
+  color: white; /* set the color of the text to white */
+}
+/* Left column*/
+.column.left{
+  width: 25%;
+  float: left top;
+  position: absolute;
+  top: 180px;
+  right: 950px;
+  z-index: -1;
+}
+/*right column*/
+.column.right{
+  width: 25%;
+  float: right top;
+  top: 20px;
+  left: 1000px;
+  position: absolute;
+}
+/* Middle column */
+.column.middle {
+  width: 50%;
+  float: right;
+  position: absolute;
+  right: 395px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* default styles for your website */
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.about{
+  align-items: center;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.middle {
+    width: 100%;
+    align-items: center;}}
+    
+
+.word-overlay {
+  position: absolute; /* set position to absolute to position the element relative to its closest positioned ancestor */
+  top: 50%; /* set the top property to 50% to position the element at the center of the container */
+  left: 60%; /* set the left property to 50% to position the element at the center of the container */
+  transform: translate(-50%, -50%); /* use the transform property to center the element horizontally and vertically */
+  z-index: 1; /* set the z-index property to a higher value than the image element to ensure the text appears on top */
+  text-align: center;/* center the text horizontally within the element */
+  color: white; /* set the color of the text to white */
+    }
+
+    input::placeholder {
+  color: darkgoldenrod;
+}
+textarea::placeholder {
+  color: darkgoldenrod;
+}
+
+::placeholder{
+  color: darkgoldenrod;
+}
+
+input {
+  color: darkgoldenrod;
+}
+
+.button{
+  width: 100px; 
+  height: 50px;
+  background-color: black; 
+  color: darkgoldenrod;
+}
+
+.barbed-borderabout {
+  z-index: 3;
+  width: 450px;
+  height: 470px;
+  top: 170px;
+  left: 150px;
+  position: absolute;
+}
+
+.barbed-bordermenu {
+  z-index: 2;
+  width: 550px;
+  height: 600px;
+  top: 150px;
+  left: 290px;
+  position: absolute;
+}
+
+.logo{
+   width: 400px;
+   height: 400px;
+   top: -250px;
+   left: -90px;
+   position: absolute;
+  }
+
+</style>
+</head>
+<body>
+<header id="home">    
+    <h1 class="header">
+        R&N Smokin Sweet Savour BBQ
+    </h1>
+    <div>
+        <nav class="nav">
+            <ul style="position: sticky; top: 0px;">
+              <li><a href="file:///C:/Users/tyler/OneDrive/Desktop/r%26n.html">Home</a></li>
+              <li><a href="file:///C:/Users/tyler/OneDrive/Desktop/randnmenu.html">Menu</a></li>  
+              <li><a href="file:///C:/Users/tyler/OneDrive/Desktop/randnabout%20-%20Copy.html">About</a></li>
+              <li><a href="file:///C:/Users/tyler/OneDrive/Desktop/randncontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>      
+</header>
+<main>
+<!--menu section-->
+<div class="image-container" id="menu">    
+  <img class="centerimg" style="height: 950px; width: 850px; padding: 20px;"  src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\burntpaper.png" alt="menu-image">
+  <img class="barbed-bordermenu" src="C:\Users\tyler\Downloads\clipart1302053 (1).png" alt="barbed-border">
+  <div class="text-overlay" style="color:black;">
+     <h2 style="font-size: xx-large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> Menu </h2>
+
+    <menu>
+      <li><a href="#"><img style="height: 100x; width: 150px;" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/322583677_696621441864231_1144182758207638776_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=cCNRwyBNpyYAX8rRueJ&_nc_ht=scontent-dfw5-1.xx&oh=00_AfBqt2hy-jZaoRNNMOTeuLyyIWEDWKQGH1Anac6kcZcWpw&oe=642135C3" alt="brisket"></a></li>
+      <li><a href="#"><img style="height: 100px; width: 150px;" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/323893183_1223446101916302_7324409125215650934_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=SQ1-G3Ho7eYAX8Cm2-a&_nc_ht=scontent-dfw5-1.xx&oh=00_AfC9ufSnGL0H--20iIh2CzuUN39X_Uhcypx0YBgsWFfrZA&oe=64225F88" alt="ribs"></a></li>
+      <li><a href="#"><img style="height: 150px; width: 150px;" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/324419333_693469902260005_8082972120687711927_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=z0FW35AuEIEAX-CNQjY&_nc_ht=scontent-dfw5-1.xx&oh=00_AfCRz3eo9NzOYJnYwC1W33Pqrju-Kn6T9_SNF59RoJ8RUQ&oe=64222661" alt="bbq sauce"></a></li>
+    </menu> 
+  </div>
+    <div class="column left">
+        <h3 style="color: darkgoldenrod; font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> <img class="logo" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\transparent-logo.png" alt="logo img"><br><br> We Cater!</h3>
+        <form type="hidden" action="https://formsubmit.co/urbanekryan06@gmail.com" method="POST" target="_blank">
+            <input style="background-color:rgb(0, 0, 0);" cols="25" rows="1" type="text" name="fname" placeholder="first name" required><br>
+            <input style="background-color: rgb(0, 0, 0);" type="text" cols="25" rows="1" name="lname" placeholder="last name" required><br>
+            <input style="background-color: rgb(0, 0, 0);" type="text" cols="25" rows="1" name="address" placeholder="address"><br>
+            <textarea style="background-color:rgb(0, 0, 0);" cols="25" rows="4" type="text" name="info" placeholder="extra info" required></textarea><br>
+            <input style="background-color:rgb(0, 0, 0)" type="email" cols="25" rows="1" name="email" placeholder="email" required><br>
+            <button class="button" type="submit">Submit</button><br>
+        </form>
+    </div>
+    <div class="column right" style="font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;">
+      <h3 style="color: darkgoldenrod;">follow us on social media</h3>
+      <a style="height: 200px; width: 200px" href="https://www.facebook.com/RNsssBBQ" target="_blank"><button class="button">Facebook</button></a>
+      <a style="height: 200px; width: 200px" href="https://www.instagram.com/rnsmokinsweetsavourbbq/" target="_blank"><button class="button">Instagram</button></a>
+    </div>
+    </main>
+    <footer class="footer" id="footer" style="color:darkgoldenrod">
+       <h3 style="padding-left: 20px;"> 
+        Contact Us: 
+       </h3>
+       <h4 style="padding-left: 20px;"> 
+        Call: (817) 925-6624 <br>
+        Email: ryan@rnsssbbq.com <br>
+       </h4>
+    </footer>
+    </body>
+    </html> 
+    
