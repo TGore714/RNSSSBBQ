@@ -5,7 +5,6 @@
     <meta name="discription" content="homestyle brisket, homemade bbq sauce and more">
     <meta name="author" content="Tyler Gore">
     <meta http-equiv="refresh" content="30">
-    <meta name="viewport" content="width=device-width, initial-scale=960px">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +18,9 @@
         background-repeat:repeat-y;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;       
+        min-height: 100vh; 
+        max-width: 1200px;
+        margin: 0 auto;
       }
     /* obveously this is the header */
     .header{
@@ -215,6 +216,78 @@ input {
    position: absolute;
    z-index: -1;
   }
+@media only screen and (max-width: 600px) {
+  /* styles for screens 600px and below */
+  .header {
+    height: 70px;
+  }
+  .nav {
+    font-size: 14px;
+  }
+  .column {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* styles for screens between 601px and 900px */
+  .header {
+    height: 100px;
+  }
+  .nav {
+    font-size: 16px;
+  }
+  .column.left {
+    width: 33.33%;
+    float: left;
+    position: static;
+  }
+  .column.middle {
+    width: 66.66%;
+    float: right;
+    position: static;
+  }
+  .column.right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  /* styles for screens 901px and above */
+  .header {
+    height: 150px;
+  }
+  .nav {
+    font-size: 18px;
+  }
+  .column.left {
+    width: 25%;
+    float: left;
+    position: absolute;
+    top: 200px;
+    right: 920px;
+  }
+  .column.middle {
+    width: 50%;
+    float: right;
+    position: absolute;
+    right: 395px;
+  }
+  .column.right {
+    width: 25%;
+    float: right;
+    position: absolute;
+    top: 40px;
+    left: 1000px;
+    display: block;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 </style>
 </head>
