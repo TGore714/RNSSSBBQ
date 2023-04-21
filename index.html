@@ -21,7 +21,8 @@
         min-height: 100vh; 
         max-width: 1200px;
         margin: 0 auto;
-      }
+        width: 100%;
+    }
     /* obveously this is the header */
     .header{
         background-color: black;
@@ -79,8 +80,12 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-.image-container {
+    height: 950px; 
+    width: 850px; 
+    padding: 20px;
+    }
+
+    .image-container {
   position: relative; /* set position to relative to create a positioning context for the child elements */
 }
 
@@ -125,13 +130,6 @@
   clear: both;
 }
 
-/* default styles for website */
-
-body {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
   
 .about{
   align-items: center;
@@ -212,11 +210,108 @@ input {
   .nav {
     font-size: 14px;
   }
-  .column {
-    width: 100%;
-    position: relative;
+.logo{
+   width: 50px;
+   height: 50px;
+   top: -250px;
+   left: -90px;
+   position: absolute;
+   z-index: -1;
   }
+    .barbed-bordermenu {
+  z-index: 2;
+  width: 110px;
+  height: 320px;
+  top: 150px;
+  left: 290px;
+  position: absolute;
 }
+.barbed-borderabout {
+  z-index: 3;
+  width: 100px;
+  height: 300px;
+  top: 120px;
+  left: 150px;
+  position: absolute;
+}
+    .button{
+  width: 45px; 
+  height: 20px; 
+  background-color: black; 
+  color: darkgoldenrod;
+}
+/* Left column*/
+.column.left{
+  width: 25%;
+  float: left top;
+  position: absolute;
+  top: 200px;
+  right: 300px;
+}
+/*right column*/
+.column.right{
+  width: 25%;
+  float: right top;
+  top: 40px;
+  left: 300px;
+  position: absolute;
+}
+/* Middle column */
+.column.middle {
+  width: 50%;
+  float: right;
+  position: absolute;
+  right: 150px;
+}
+   .nav {
+  background-color: black;
+  overflow: hidden;
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0px;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color:darkgoldenrod;
+  color: black;
+}
+.footer{
+    background-color: black;
+    margin-top: auto;
+    position: relative;
+    bottom: -800px;
+    padding: 10px;
+    display: block; 
+    width: 100%;  
+  }
+    .centerimg{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 120px; 
+    width: 200px; 
+    padding: 10px;
+    } 
+    
+    }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   /* styles for screens between 601px and 900px */
@@ -300,7 +395,7 @@ img {
 <main>
 <!--menu section-->
   <div class="image-container" id="menu">    
-    <img class="centerimg" style="height: 950px; width: 850px; padding: 20px;"  src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="menu-image">
+    <img class="centerimg" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="menu-image">
     <img class="barbed-bordermenu" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/barbed-wire.png" alt="barbed-border">
     <div class="text-overlay" style="color:black;">
        <h2 style="font-size: xx-large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> Menu </h2>
@@ -314,7 +409,7 @@ img {
       <!--about section-->
     <div>
       <div class="column middle image-container" id="about">    
-    <img class="centerimg" style="height: 850px; width: 820px; padding: 20px;"  src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="about image">
+    <img class="centerimg" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="about image">
     <img class="barbed-borderabout" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/barbed-wire.png" alt="barbed-border">
     <div class="word-overlay" style="color:black;">
        <h2 style="font-size: xx-large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> about us </h2>  
