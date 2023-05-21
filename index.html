@@ -227,16 +227,16 @@ input {
  z-index: 2;
   width: 550px;
   height: 700px;
-  top: 140px;
-  left: 50px;
+  top: 110px;
+  left: 30px;
   position: absolute;
 }
 .barbed-borderabout {
   z-index: 3;
-  width: 450px;
-  height: 470px;
+  width: 550px;
+  height: 700px;
   top: 100px;
-  left: 230px;
+  left: 300px;
   position: absolute;
 }
     .button{
@@ -315,7 +315,7 @@ input {
     display: block;
     height: 100px; 
     width: 200px; 
-    padding: 20px;
+    padding: 5px;
     }
     }
 
@@ -379,7 +379,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+ 
+ .element-to-hide {
+    display: block;
+  }
 
+  @media (max-width: 767px) {
+    .element-to-hide {
+      display: none;
+    }
+  }
 </style>
 </head>
 <body>
@@ -431,7 +440,7 @@ img {
     </div>
       </div>
 <!--column sections-->
-      <div class="column left">
+      <div class="column left element-to-hide">
     <h3 style="color: darkgoldenrod; font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> 
       <img class="logo" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/transparent-logo.png" alt="logo img"><br><br> We Cater!</h3>   
       <form type="hidden" action="https://formsubmit.co/urbanekryan06@gmail.com" method="POST" target="_blank">
@@ -444,7 +453,7 @@ img {
     </form>
 </div>
 <!--social media buttons-->
-<div class="column right" style="font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;">
+<div class="column right element-to-hide" style="font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;">
   <h3 style="color: darkgoldenrod;">follow us on social media</h3>
   <a style="height: 200px; width: 200px" href="https://www.facebook.com/RNsssBBQ" target="_blank"><button class="button">Facebook</button></a>
   <a style="height: 200px; width: 200px" href="https://www.instagram.com/rnsmokinsweetsavourbbq/" target="_blank"><button class="button"">Instagram</button></a>
