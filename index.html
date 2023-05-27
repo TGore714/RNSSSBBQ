@@ -493,13 +493,16 @@ const nextButton = document.getElementById("next-button");
 const videoContainers = document.querySelectorAll("#video-carousel .video-container");
 
 let currentVideoIndex = 0;
+let timer;
 
 prevButton.addEventListener("click", () => {
   showVideo((currentVideoIndex - 1 + videoContainers.length) % videoContainers.length);
+  resetTimer();
 });
 
 nextButton.addEventListener("click", () => {
   showVideo((currentVideoIndex + 1) % videoContainers.length);
+  resetTimer();
 });
 
 function showVideo(videoIndex) {
@@ -508,9 +511,20 @@ function showVideo(videoIndex) {
   currentVideoIndex = videoIndex;
 }
 
-showVideo(currentVideoIndex);
+function startTimer() {
+  timer = setInterval(() => {
+    showVideo((currentVideoIndex + 1) % videoContainers.length);
+  }, 5000); // Change the delay (in milliseconds) between video transitions here (e.g., 5000 = 5 seconds)
+}
 
-      
+function resetTimer() {
+  clearInterval(timer);
+  startTimer();
+}
+
+showVideo(currentVideoIndex);
+startTimer();
+
 </script>
         
 </div>
