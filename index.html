@@ -42,7 +42,13 @@
   overflow: hidden;
 }
 
-
+    /* Styles for landscape orientation */
+    @media screen and (orientation: landscape) {
+      body {
+        transform: scale(1.2); /* Adjust the zoom level as desired */
+        transform-origin: center top;
+      }
+    }
 .nav ul {
   list-style-type: none;
   margin: 0;
