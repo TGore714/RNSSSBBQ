@@ -4,8 +4,9 @@
     <meta name="keywords" content="brisket, bbq, food, homemade food, homestyle bbq, bbq sauce">
     <meta name="description" content="homestyle brisket, homemade bbq sauce and more">
     <meta name="author" content="Tyler Gore">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+          
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Rye&display=swap" rel="stylesheet">
@@ -208,210 +209,15 @@ input {
     
                                                    /*phone style settings*/
     
-  @media screen and (max-width: 600px) {
-   /* background image */
-    body{
-        background-image: url("https://static.vecteezy.com/system/resources/previews/007/287/322/non_2x/burnt-wooden-board-black-charcoal-wood-texture-burned-barbecue-background-free-photo.jpg");
-        background-repeat:repeat-y;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; 
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    /* obviously this is the header */
-    .header{
-        background-color: black;
-        font-family: 'Cinzel', serif;
-        font-family: 'Rye', cursive;
-        text-align: center;
-        color: darkgoldenrod;
-        width: 150%;
-        height: 90px;   
-        display: block;
-      }
-     
-    main {
-        flex: 1;
-    }
-    .nav {
-  background-color: black;
-  overflow: hidden;
-}
-
-
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: sticky;
-  top: 0px;
-}
-
-.nav li {
-  float: left;
-}
-
-.nav li a {
-  display: block;
-  color: darkgoldenrod;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  background-color:darkgoldenrod;
-  color: black;
-}
-.footer{
-    background-color: black;
-    margin-top: auto;
-    position: relative;
-    bottom: -890px;
-    padding: 20px;
-    display: block; 
-    width: 100%;  
+@media screen and (max-width: 600px) {
+  .column.middle {
+    width: 100%;
+    align-items: center;
   }
+    
+    
 
-.centerimg{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 950px; 
-    width: 850px; 
-    padding: 20px;
-    }
-
- .centerimgabt{
-    top: 100px;
-    left: 650px;
-    display: block;
-    height: 950px; 
-    width: 850px; 
-    padding: 20px;
-    }
-    .image-container {
-  position: relative; \
-}
-
-.text-overlay {
-  position: absolute; 
-  top: 45%; 
-  left: 60%; 
-  transform: translate(-50%, -50%); 
-  z-index: 1; 
-  text-align: center;
-  color: white;
-}
-/* Left column*/
-.column.left{
-  width: 25%;
-  float: left, top;
-  position: absolute;
-  top: 200px;
-  right: 920px;
-}
-/*right column*/
-.column.right{
-  width: 25%;
-  float: right top;
-  top: 40px;
-  left: 1000px;
-  position: absolute;
-}
-/* Middle column */
-.column.middle {
-  width: 50%;
-  float: right;
-  position: absolute;
-  right: 395px;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-  
-.about{
-  align-items: center;
-}
-
-.word-overlay {
-  position: relative; 
-  top: 45%; 
-  left: 10%; 
-  transform: translate(-50%, -50%); 
-  z-index: 1; 
-  text-align: center;
-  color: white; 
-    }
-
-    input::placeholder {
-  color: darkgoldenrod;
-}
-textarea::placeholder {
-  color: darkgoldenrod;
-}
-
-::placeholder{
-  color: darkgoldenrod;
-}
-
-input {
-  color: darkgoldenrod;
-}
-
-.button{
-  width: 100px; 
-  height: 50px; 
-  background-color: black; 
-  color: darkgoldenrod;
-}
-
-.barbed-borderabout {
-  z-index: 3;
-  width: 500px;
-  height: 730px;
-  top: 100px;
-  left: 650px;
-  position: absolute;
-}
-
-.barbed-bordermenu {
-  z-index: 2;
-  width: 550px;
-  height: 600px;
-  top: 150px;
-  left: 110px;
-  position: absolute;
-}
-
-.bundle{
-  width: 150px;
-  height: 150px;
-  z-index: -1;
-  left: 50px;
-  top: 50px;
-}
-
-.logo{
-   width: 400px;
-   height: 350px;
-   top: -250px;
-   left: -90px;
-   position: absolute;
-   z-index: -1;
-  }
-.video-container {
-    display: none;
-    }
- }
+    
 </style>
 </head>
 <body>
