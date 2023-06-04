@@ -211,7 +211,152 @@ input {
     width: 100%;
     align-items: center;
   }
+
+    .header {
+    height: 90px;
+    width: 100%;
+    }
+  .nav {
+    font-size: 14px;
+  }
+.logo{
+   width: 50px;
+   height: 50px;
+   top: -250px;
+   left: -90px;
+   position: absolute;
+   z-index: -1;
+   display: none;
+        }
+    .barbed-bordermenu {
+ z-index: 2;
+  width: 550px;
+  height: 670px;
+  top: 110px;
+  left: 40px;
+  position: absolute;
 }
+.barbed-borderabout {
+  z-index: 3;
+  width: 550px;
+  height: 700px;
+  top: 100px;
+  left: 500px;
+  position: absolute;
+}
+    .button{
+  width: 45px; 
+  height: 20px; 
+  background-color: black; 
+  color: darkgoldenrod;
+        }
+/* Left column*/
+.column.left{
+  width: 25%;
+  float: left top;
+  position: absolute;
+  top: 200px;
+  right: 300px;
+  display: none;
+    }
+/*right column*/
+.column.right{
+  width: 25%;
+  float: right top;
+  top: 40px;
+  left: 300px;
+  position: absolute;
+  display: none;
+    }
+/* Middle column */
+.column.middle {
+  width: 70%;
+  float: right;
+  position: absolute;
+  right: 395px;
+   .nav {
+  background-color: black;
+  overflow: auto;
+  height: 25%;
+    }
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0px;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color:darkgoldenrod;
+  color: black;
+}
+.footer{
+    background-color: black;
+    margin-top: auto;
+    position: relative;
+    bottom: -800px;
+    padding: 10px;
+    display: block; 
+    width: 100%;  
+  }
+    .centerimg{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 70px; 
+    width: 200px; 
+    padding: 100px;
+    }
+.image-container {
+  position: relative; 
+}
+.centerimgabt {
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 200px;
+  float: right;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  display: block;
+}
+/*about section*/
+.word-overlay { 
+  position: absolute; 
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  text-align: center;
+  color: white; 
+    }    
+ /*menu section*/
+.text-overlay {
+  position: absolute; 
+  top: 45%; 
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  text-align: center;
+  color: white; 
+    }
+ }
 </style>
 </head>
 <body>
