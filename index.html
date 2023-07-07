@@ -1,407 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="keywords" content="brisket, bbq, food, homemade food, homestyle bbq, bbq sauce">
-    <meta name="description" content="homestyle brisket, homemade bbq sauce and more">
-    <meta name="author" content="Tyler Gore">
-    <meta name="viewport" content="width=device-width, initial-scale=0.30">
-    <meta http-equiv="refresh" content="300">
+    <head>
+        <title>New RandN </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body {
+                font-family: "Times New Roman", Georgia, Serif;
+                background-color: grey;
+            }
 
-    <link rel="icon" href="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/transparent-logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Rye&display=swap" rel="stylesheet">
-   <title>R&N Smokin Sweet Savour BBQ</title>
-
-<style>
-    /* background image */
-    body{
-        background-image: url("https://static.vecteezy.com/system/resources/previews/007/287/322/non_2x/burnt-wooden-board-black-charcoal-wood-texture-burned-barbecue-background-free-photo.jpg");
-        background-repeat:repeat;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; 
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    /* obviously this is the header */
-    .header{
-        background-color: black;
-        font-family: 'Cinzel', serif;
-        font-family: 'Rye', cursive;
-        text-align: center;
-        color: darkgoldenrod;
-        width: 100%;
-        height: 40px;   
-      }
-    main {
-        flex: 1;
-    }
-    .nav {
-  background-color: black;
-  overflow: hidden;
-}
-
-   
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: sticky;
-  top: 0px;
-}
-
-.nav li {
-  float: left;
-}
-
-.nav li a {
-  display: block;
-  color: darkgoldenrod;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  background-color:darkgoldenrod;
-  color: black;
-}
-.footer{
-    background-color: black;
-    margin-top: auto;
-    position: relative;
-    bottom: -890px;
-    padding: 20px;
-    display: block; 
-    width: 100%;  
-  }
-
-.centerimg{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 950px; 
-    width: 850px; 
-    padding: 20px;
-    }
-
-    .image-container {
-  position: relative; /* set position to relative to create a positioning context for the child elements */
-}
-
-.text-overlay {
-  position: absolute; /* set position to absolute to position the element relative to its closest positioned ancestor */
-  top: 45%; /* set the top property to 50% to position the element at the center of the container */
-  left: 40%; /* set the left property to 50% to position the element at the center of the container */
-  transform: translate(-50%, -50%); /* use the transform property to center the element horizontally and vertically */
-  z-index: 1; /* set the z-index property to a higher value than the image element to ensure the text appears on top */
-  text-align: center;/* center the text horizontally within the element */
-  color: white; /* set the color of the text to white */
-}
-/* Left column*/
-.column.left{
-  width: 25%;
-  float: left, top;
-  position: absolute;
-  top: 200px;
-  right: 920px;
-}
-/*right column*/
-.column.right{
-  width: 25%;
-  float: right top;
-  top: 40px;
-  left: 1000px;
-  position: absolute;
-}
-/* Middle column */
-.column.middle {
-  width: 50%;
-  float: right;
-  position: absolute;
-  right: 395px;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-  
-.about{
-  align-items: center;
-}
-
-.word-overlay {
-  position: absolute; /* set position to absolute to position the element relative to its closest positioned ancestor */
-  top: 45%; /* set the top property to 50% to position the element at the center of the container */
-  left: 60%; /* set the left property to 50% to position the element at the center of the container */
-  transform: translate(-50%, -50%); /* use the transform property to center the element horizontally and vertically */
-  z-index: 1; 
-  text-align: center;
-  color: white; 
-    }
-
-    input::placeholder {
-  color: darkgoldenrod;
-}
-textarea::placeholder {
-  color: darkgoldenrod;
-}
-
-::placeholder{
-  color: darkgoldenrod;
-}
-
-input {
-  color: darkgoldenrod;
-}
-
-.button{
-  width: 100px; 
-  height: 50px; 
-  background-color: black; 
-  color: darkgoldenrod;
-}
-.button:hover { 
-    background-color: darkgoldenrod;
-    color: black;
-    }
-.sbutton {
-   height: 200px;
-   width: 200px;
-    }
-    
-.sbutton:hover {   /* this is the hover style for the social media buttons */
-    height: 175px;
-    width: 175px:
-    }
-
-   .barbed-borderabout {
-  z-index: 3;
-  width: 500px;
-  height: 730px;
-  top: 100px;
-  left: 130px;
-  position: absolute;
-}
-
-.barbed-bordermenu {
-  z-index: 2;
-  width: 550px;
-  height: 600px;
-  top: 150px;
-  left: 290px;
-  position: absolute;
-}
-
-.bundle{
-  width: 150px;
-  height: 150px;
-  z-index: -1;
-  left: 50px;
-  top: 50px;
-}
-
-.logo{
-   width: 400px;
-   height: 350px;
-   top: -250px;
-   left: -90px;
-   position: absolute;
-   z-index: -1;
-  }
-.video-container {
-    display: none;
-    }
-    
-    
-                                                   /*phone style settings*/
-    
-@media screen (max-width: 600px) {
-  .column.middle {
-    width: 100%;
-    align-items: center;
-  }
-   .header{
-       width: 200%;
- }
-    .barbed-bordermenu {
-         left: 80px;
-    }
-    .word-overlay {
-        left: 85%;
-        height: 90px;
-    }
-    .footer {
-        position: sticky;
-        width: 100%;
-    }
-    }
-    /* Styles for landscape orientation */
-    @media screen and (orientation: landscape) and (max-width: 600px) {
-  body {
-    transform: scale(2.0); 
-    transform-origin: center top;
-  }
-  }
-</style>
-</head>
-<body>
-<header>    
-    <h1 class="header">
-        R&N Smokin Sweet Savour BBQ
-    </h1>
-    <div id= "delnav">
-          <nav class="nav">
-            <ul style="position: sticky; top: 0px;">
-              <li><a href="https://github.com/TGore714/RNSSSBBQ/blob/main/index.html">Home</a></li>
-              <li><a href="https://github.com/TGore714/RNSSSBBQ/blob/main/randnmenu.html">Menu</a></li>  
-              <li><a href="https://github.com/TGore714/RNSSSBBQ/blob/main/randnabout%20-%20Copy.html">About</a></li>
-              <li><a href="https://github.com/TGore714/RNSSSBBQ/blob/main/randncontact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>      
-</header>
-<main>
-<!--menu section-->
-  <div class="image-container" id="menu">    
-    <img class="centerimg" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="menu-image">
-    <img class="barbed-bordermenu" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/barbed-wire.png" alt="barbed-border">
-    <div class="text-overlay" style="color:black;">
-       <h2 style="font-size: xx-large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> Menu </h2>
-
-      <menu>
-        <li><a href="#"><img style="height: 100x; width: 150px;" src="images.html/342617901_576875567861758_8528698317264841039_n.jpg" alt="brisket"></a></li>
-        <li><a href="#"><img style="height: 100px; width: 150px;" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/323893183_1223446101916302_7324409125215650934_n.jpg" alt="ribs"></a></li>
-        <li><a href="#"><img style="height: 150px; width: 150px;" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/324419333_693469902260005_8082972120687711927_n.jpg" alt="bbq sauce"></a></li>
-      </menu> 
-    </div>
-      <!--about section-->
-    <div>
-      <div class="column middle image-container" id="about">    
-    <img class="centerimg centerimgabt" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/burntpaper.png" alt="about image">
-    <img class="barbed-borderabout" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/barbed-wire.png" alt="barbed-border">
-    <div class="word-overlay" style="color:black;">
-       <h2 style="font-size: xx-large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> about us </h2>  
-        <p style="font-size: large;">
-          Welcome to R&N Smokin Sweet Savor BBQ! We are a small homestyle BBQ business run by Ryan and Natalie, 
-            who share a passion for great food and a love for bringing people together over a delicious meal.
-            Our mouth-watering BBQ is slow-smoked to perfection using only the freshest, high-quality ingredients.
-            From succulent pulled pork to savory beef brisket, our menu is sure to satisfy your cravings.
-            Whether you're looking for a tasty lunch or planning a big event, we're dedicated to providing you with friendly
-            service and unbeatable flavors. Thank you for choosing R&N Smokin Sweet Savor BBQ - we can't wait to share our
-            love of BBQ with you!
-        </p>
-    </div>
-      </div>
-<!--column sections-->
-      <div class="column left element-to-hide">
-    <h3 style="color: darkgoldenrod; font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;"> 
-      <img class="logo" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/images.html/transparent-logo.png" alt="logo img"><br><br> We Cater!</h3>   
-      <form type="hidden" action="https://formsubmit.co/ryan@rnsssbbq.com" method="POST">
-        <input style="background-color:rgb(0, 0, 0);" cols="25" rows="1" type="text" name="fname" placeholder="first name" required><br>
-        <input style="background-color: rgb(0, 0, 0);" type="text" cols="25" rows="1" name="lname" placeholder="last name" required><br>
-        <input style="background-color: rgb(0, 0, 0);" type="text" cols="25" rows="1" name="address" placeholder="address"><br>
-        <textarea style="color: darkgoldenrod; background-color:rgb(0, 0, 0);" cols="25" rows="4" type="text" name="order info" placeholder="what would you like catered?" required></textarea><br>
-        <input style="background-color:rgb(0, 0, 0)" type="email" cols="25" rows="1" name="email" placeholder="email" required><br>
-        <button class="button" type="submit">Submit</button><br>
-    </form>
-</div>
-<!--social media buttons-->
-<div class="column right element-to-hide" style="font-size: large; font-family: 'Cinzel', serif; font-family: 'Rye', cursive;">
-  <h3 style="color: darkgoldenrod;">follow us on social media</h3>
-  <a class="sbutton" href="https://www.facebook.com/RNsssBBQ" target="_blank"><img style="height: 100px; width: 100px;" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="facebook"></a>
-  <a class="sbutton" href="https://www.instagram.com/rnsmokinsweetsavourbbq/" target="_blank"><img style="height: 100px; width: 100px;" src="https://static-00.iconduck.com/assets.00/social-instagram-icon-512x512-6mp2zfl3.png" alt="instagram"></a>
-  <a class="sbutton" href="https://twitter.com/RNSSSBBQ" target="blank"><img style="height: 100px; width: 100px;" src="data:image/png;base64,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" alt="twitter"></a>
-  <a class="sbutton" href="https://www.youtube.com/@rnsmokinsweetsavourbbq" target="blank"><img style="height: 100px; width: 100px;" src="https://www.freepnglogos.com/uploads/official-youtube-logo-png-18.png" alt="youtube"></a>
-
-   <div id="video-carousel">
-    <div class="video-container">
-      <!-- Video 1 -->
-     <iframe width="275" height="420" src="https://www.youtube.com/embed/tMw3VeoiSWU" title="April 7, 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay muted></iframe>
-    </div>
-    <div class="video-container">
-      <!-- Video 2 -->
-    <iframe width="275" height="420" src="https://www.youtube.com/embed/sRcflJhdHXQ" title="May 1, 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay muted></iframe>
-    </div>
-    <div class="video-container">
-      <!-- Video 3 --> 
-    <iframe width="275" height="420" src="https://www.youtube.com/embed/oIyKReiX8yc" title="May 4, 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay muted></iframe>
-    </div>
-  </div>
-
-  <button style="background-color: black;  color: darkgoldenrod;"id="prev-button">Previous</button>
-  <button style="background-color: black;  color: darkgoldenrod;" id="next-button">Next</button>
-
-  <script>
-      const videoUrls = [
-  "https://www.youtube.com/embed/tMw3VeoiSWU",
-  "https://www.youtube.com/embed/sRcflJhdHXQ",
-  "https://www.youtube.com/embed/oIyKReiX8yc"
-];
-const prevButton = document.getElementById("prev-button");
-const nextButton = document.getElementById("next-button");
-const videoContainers = document.querySelectorAll("#video-carousel .video-container");
-
-let currentVideoIndex = 0;
-let timer;
-
-prevButton.addEventListener("click", () => {
-  showVideo((currentVideoIndex - 1 + videoContainers.length) % videoContainers.length);
-  resetTimer();
-});
-
-nextButton.addEventListener("click", () => {
-  showVideo((currentVideoIndex + 1) % videoContainers.length);
-  resetTimer();
-});
-
-function showVideo(videoIndex) {
-  videoContainers[currentVideoIndex].style.display = "none";
-  videoContainers[videoIndex].style.display = "block";
-  currentVideoIndex = videoIndex;
-}
-
-function startTimer() {
-  timer = setInterval(() => {
-    showVideo((currentVideoIndex + 1) % videoContainers.length);
-  }, 30000); // Change the delay (in milliseconds) between video transitions here (e.g., 5000 = 5 seconds)
-}
-
-function resetTimer() {
-  clearInterval(timer);
-  startTimer();
-}
-
-showVideo(currentVideoIndex);
-startTimer();
-
-</script>
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Playfair Display";
+                letter-spacing: 5px;
+            }
         
-</div>
-<script>
-var divElement = document.getElementById("delnav");
-divElement.remove();
-</script>
-      
- </main>
- <footer class="footer" id="footer" style="color: darkgoldenrod;">
-   <h3 style="padding-left: 20px;"> 
-    Contact Us: 
-   </h3>
-   <h4 style="padding-left: 20px;"> 
-    Call: (817) 925-6624 <br>
-    Email: ryan@rnsssbbq.com <br>
-   </h4>
-</footer>
+            
+            
+
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">R&N Smokin Sweet Savour BBQ</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\homebrisket.jpg" alt="bisket" width="1600" height="600">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h2 class="w3-xxlarge">R&N</h2>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="C:\Users\tyler\Downloads\catering.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+                    height="750">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About R&N</h1><br>
+                <h5 class="w3-center">Tradition since 2023</h5>
+                <p class="w3-large">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to R&N Smokin Sweet Savor BBQ! We are a small homestyle BBQ business run by Ryan and Natalie, 
+                    who share a passion for great food and a love for bringing people together over a delicious meal.
+                    Our mouth-watering BBQ is slow-smoked to perfection using only the freshest, high-quality ingredients. <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From succulent pulled pork to savory beef brisket, our menu is sure to satisfy your cravings.
+                    Whether you're looking for a tasty lunch or planning a big event, we're dedicated to providing you with friendly
+                    service and unbeatable flavors. Thank you for choosing R&N Smokin Sweet Savor BBQ - we can't wait to share our
+                    love of BBQ with you!</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Menu</h1><br>
+                
+                <h4>Brisket</h4>
+                <p class="w3-text-black">
+                    Slow-cooked perfection, our tender, smoky brisket satisfies. $200</p><br>
+                
+                    <h4>burnt ends</h4>
+                <p class="w3-text-black">Irresistible cubes of smoky brisket, our burnt ends are a flavor explosion. $100</p><br>
+
+                <h4>BBQ Sauce</h4>
+                <p class="w3-text-black"> Elevate your dish with our tangy, smoky BBQ sauce. $25</p><br>
+
+                <h4>Mac and Cheese</h4>
+                <p class="w3-text-black">Savor our homemade smoked mac and cheese, a creamy delight with a smoky twist. $100</p><br>
+
+                <h4>Potato Salad</h4>
+                <p class="w3-text-black">Savor the harmony of flavors in our classic homemade potato salad $100</p>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <img src="C:\Users\tyler\Downloads\menuimg.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater
+                the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact
+                us.</p>
+            <p class="w3-text-black w3-large"><b>R&N, The Taste of Texas</b></p>
+            <p>You can contact us by phone (817) 925-6624 or email Ryan@rnsssbbq.com, or you can send us a
+                message here:</p>
+            <form action="https://formsubmit.co/ryan@rnsssbbq.com" method="POST" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required
+                        name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements"
+                        required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
 </body>
-</html> 
 
-
+</html>
 
