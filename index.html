@@ -3,7 +3,7 @@
     <head>
         <title>R&N Smokin Sweet Savour BBQ</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <style>
             body {
@@ -21,41 +21,115 @@
                 letter-spacing: 5px;
             }
         
-            
-            
+         .logo {
+            width: 500px;
+            height: 500px;
+            justify-content: center;
+         }
 
-        </style>
-    </head>
+         .media {
+            width: 200px;
+            height: 200px;
+            float: right;
+            padding: 10px 10px 10px 10px; 
+        }
+
+    /* Custom styles for mobile dropdown menu */
+    #mobileMenu {
+        display: none;
+        position: absolute;
+        background-color: grey; /* Change background color */
+        min-width: 160px; /* Set the desired width */
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0; /* Position the menu from the right side */
+    }
+
+    #mobileMenu a {
+        color: white; /* Change text color */
+        padding: 12px 16px;
+        display: block;
+    }
+
+    #mobileMenu a:hover {
+        background-color: lightgrey; /* Change background color on hover */
+    }
+
+    /* Adjust the positioning for small screens */
+    @media only screen and (max-width: 1200px) {
+        .w3-right.w3-hide-small {
+            display: none;
+        }
+    
+        .smaller {
+            width: 100%;
+        }
+    
+        .logo {
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+        }
+            .media {
+            width: 200px;
+            height: 200px;
+            float: right;
+            padding: 10px 10px 10px 10px; 
+            display: none;
+            }
+
+    }
+</style>
+
+</head>
 <body>
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
-            <a href="#home" class="w3-bar-item w3-button">R&N Smokin Sweet Savour BBQ</a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">R&N BBQ</a>
+        <!-- Add a dropdown icon and menu items -->
+        <div class="w3-right w3-hide-large w3-dropdown-click">
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large" onclick="toggleMenu()">☰</a>
+            <div id="mobileMenu" class="w3-dropdown-content w3-bar-block w3-card">
                 <a href="#about" class="w3-bar-item w3-button">About</a>
                 <a href="#menu" class="w3-bar-item w3-button">Menu</a>
                 <a href="#contact" class="w3-bar-item w3-button">Contact</a>
             </div>
         </div>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
     </div>
+</div>
+
 
     <!-- Header -->
     <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-        <img class="w3-image" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/homebrisket.jpg" alt="bisket" width="1600px" height="800px">
+        <img class="w3-image smaller" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\homebrisket.jpg" alt="bisket" width="1600" height="600">
         <div class="w3-display-bottomleft w3-padding-large w3-opacity">
         <h2 class="w3-xxlarge">R&N</h2>
         </div>
     </header>
-
+    
+    <!--logo and social media-->
+    <img class="logo" src="C:\Users\tyler\OneDrive\Documents\images.html\transparent-logo (2).png" alt="logo">
+    <a href="https://www.facebook.com/RNsssBBQ"><img class="media" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\Facebook-Transparent.png" alt="facebook"></a>
+    <a href="https://www.instagram.com/rnsmokinsweetsavourbbq/"><img class="media" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\instagram.png" alt="instagram"></a>
+    <a href="https://twitter.com/RNSSSBBQ"><img class="media" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\twitterlogo.png" alt="twitter"></a>
+    <a href="https://www.youtube.com/@rnsmokinsweetsavourbbq"><img class="media" src="C:\Users\tyler\OneDrive\Pictures\Saved Pictures\youtubelogo.png" alt="youtube"></a>
+    
     <!-- Page content -->
     <div class="w3-content" style="max-width:1100px">
 
         <!-- About Section -->
         <div class="w3-row w3-padding-64" id="about">
             <div class="w3-col m6 w3-padding-large w3-hide-small">
-                <img src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/catering.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+                <img src="C:\Users\tyler\Downloads\catering.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
                     height="750">
             </div>
 
@@ -79,30 +153,40 @@
             <div class="w3-col l6 w3-padding-large">
                 <h1 class="w3-center">Our Menu</h1><br>
                 
-                <h4>Brisket</h4>
+                <h4>Smoked Brisket</h4>
                 <p class="w3-text-black">
-                    Slow-cooked perfection, our tender, smoky brisket satisfies. $200</p><br>
+                    Slow-cooked perfection, our tender, smoky brisket satisfies. <b>$170 whole or $20 per lb</b></p><br>
                 
-                    <h4>Burnt Ends</h4>
-                <p class="w3-text-black">Irresistible cubes of smoky brisket, our burnt ends are a flavor explosion. $100</p><br>
+                <h4>Brisket Burnt Ends</h4>
+                <p class="w3-text-black">Irresistible cubes of smoky brisket, our burnt ends are a flavor explosion. <b>$20 per lb</b></p><br>
 
-                <h4>BBQ Sauce</h4>
-                <p class="w3-text-black"> Elevate your dish with our tangy, smoky BBQ sauce. $25</p><br>
-
-                <h4>Mac and Cheese</h4>
-                <p class="w3-text-black">Savor our homemade smoked mac and cheese, a creamy delight with a smoky twist. $100</p><br>
+                <h4>Smoked Mac and Cheese</h4>
+                <p class="w3-text-black">Savor our homemade smoked mac and cheese, a creamy delight with a smoky twist. <b>large: $40 Small: $7</b></p><br>
 
                 <h4>Potato Salad</h4>
-                <p class="w3-text-black">Savor the harmony of flavors in our classic homemade potato salad $100</p>
+                <p class="w3-text-black">Savor the harmony of flavors in our classic homemade potato salad <b>large: $40 Small: $7</b></p><br>
             
-                 <h4>Banana Pudding</h4>
-                 <p class="w3-text-black">Delight in our heavenly banana pudding, layers of creamy vanilla custard, ripe bananas, and luscious whipped cream, creating a 
-                     nostalgic and irresistible dessert that will transport you to sweet bliss with every spoonful.</p>
+                <h4>Pork Belly Burnt Ends</h4>
+                <p class="w3-text-black">Savor our pork belly burnt ends: Smoky, tender, and irresistible. <b>$20 per lb</b></p><br>
+
+                <h4>Pulled Pork</h4>
+                <p class="w3-text-black">Relish in the mouthwatering delight of our pulled pork, where succulent strands of
+                slow-cooked pork, infused with a harmonious blend of smoky and savory flavors, effortlessly melt in your mouth, creating a truly satisfying and unforgettable culinary experience. <b>$60 whole or $11 per lb</b></p><br>
+            
+                <h4>Smoked Chicken Quarters</h4>
+                <p class="w3-text-black">Enjoy the smoky perfection of our smoked chicken quarters, where juicy and flavorful chicken,
+                expertly seasoned and slow-cooked to perfection, delivers a delightful balance of tender meat, crispy skin, and an irresistible smoky essence that will have you coming back for more. <b>$10 per lb</b></p><br>
+        
+                <h4>Banana Pudding</h4>
+                <p class="w3-text-black">Delight in our luscious banana pudding, a heavenly dessert where layers of velvety custard,
+                slices of ripe bananas, and delicate vanilla wafers meld together, creating a divine symphony of flavors and textures that will transport your taste buds to pure bliss. <b>large: $40 Small: $5</b></p><br>
+
+                <h3>Ask Us About Specials, and Catering In the Contact Section</h3>
             
             </div>
 
             <div class="w3-col l6 w3-padding-large">
-                <img src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/menuimg.jpg" alt="Menu" style="width:100%">
+                <img src="C:\Users\tyler\Downloads\menuimg.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
             </div>
         </div>
 
@@ -132,7 +216,30 @@
         <!-- End page content -->
     </div>
 
+    <script>
+        function toggleMenu() {
+            var mobileMenu = document.getElementById("mobileMenu");
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            } else {
+                mobileMenu.style.display = "block";
+            }
+        }
+    
+        // Close the mobile menu when clicking outside of it
+        document.addEventListener("click", function(event) {
+            var mobileMenu = document.getElementById("mobileMenu");
+            var menuIcon = document.querySelector(".w3-dropdown-click");
+            var targetElement = event.target;
+    
+            if (!mobileMenu.contains(targetElement) && !menuIcon.contains(targetElement)) {
+                mobileMenu.style.display = "none";
+            }
+        });
+    </script>
+    
+        
+
 </body>
 
 </html>
-
