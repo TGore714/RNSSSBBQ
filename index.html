@@ -79,6 +79,12 @@
        width: 100%;
        height: 680px;
    }
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
             
     /* Adjust the positioning for small screens */
     @media only screen and (max-width: 1200px) {
@@ -104,7 +110,8 @@
 <body>
 
     <div class="animate-bottom">
-    
+
+<div class="sticky-wrapper">
     <!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
@@ -126,7 +133,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
     <!-- Header -->
     <img style="height:  400px; width: 100%"; class="w3-image" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/homebrisket.jpg" alt="bisket">
