@@ -10,17 +10,6 @@
         <link rel="icon" href="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/transparent-logo%20(2).png" type="image/x-icon">
         
         <style>
-          
-            .animate-bottom {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 1.5s ease, transform 0.5s ease;
-    }
-
-    .animate-bottom.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
             
             body {
                 font-family: "Times New Roman", Georgia, Serif;
@@ -54,6 +43,15 @@
             align
         }
 
+.hidden-element {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+            
     /* Custom styles for mobile dropdown menu */
     #mobileMenu {
         display: none;
@@ -126,7 +124,7 @@
     </div>
 </div>
 
-    <div class="animate-bottom">
+    <div id="container" class="hidden-element">
     
         <!-- Header -->
     <img style="height:  400px; width: 100%"; class="w3-image" src="https://raw.githubusercontent.com/TGore714/RNSSSBBQ/main/homebrisket.jpg" alt="bisket">
@@ -256,23 +254,34 @@
             }
         });
 
-document.addEventListener("DOMContentLoaded", function() {
-      window.addEventListener("scroll", animateElements);
+// Get all hidden elements
+const hiddenElements = document.querySelectorAll('.hidden-element');
 
-      function animateElements() {
-        const elements = document.querySelectorAll(".animate-bottom");
-        elements.forEach(function(element) {
-          const elementPosition = element.getBoundingClientRect().top;
-          const windowHeight = window.innerHeight;
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
-          if (elementPosition < windowHeight * 0.8) {
-            element.classList.add("visible");
-          }
-        });
-      }
+// Function to handle scroll event
+function handleScroll() {
+  hiddenElements.forEach(element => {
+    if (isInViewport(element)) {
+      element.classList.add('visible');
+    }
+  });
+}
 
-      animateElements(); // Trigger animation on page load
-    });
+// Attach scroll event listener to the window
+window.addEventListener('scroll', handleScroll);
+
+// Initial check in case elements are already in the viewport
+handleScroll();
         
     </script>
     
