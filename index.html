@@ -11,6 +11,16 @@
         
         <style>
           
+            .animate-bottom {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animate-bottom.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
             
             body {
                 font-family: "Times New Roman", Georgia, Serif;
@@ -91,6 +101,9 @@
 
 </head>
 <body>
+
+    <div class="animate-bottom">
+    
     <!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
@@ -216,6 +229,7 @@
             </form>
         </div>
     </div>
+        
         <!-- End page content -->
     </div>
 
@@ -240,7 +254,23 @@
             }
         });
 
+document.addEventListener("DOMContentLoaded", function() {
+      window.addEventListener("scroll", animateElements);
 
+      function animateElements() {
+        const elements = document.querySelectorAll(".animate-bottom");
+        elements.forEach(function(element) {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementPosition < windowHeight * 0.8) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      animateElements(); // Trigger animation on page load
+    });
         
     </script>
     
