@@ -11,17 +11,6 @@
         
         <style>
           
-            .animate-bottom.visible {
-  opacity: 1; /* Make the element visible */
-  transform: translateY(0); /* Reset the element position */
-}
-            
-            
-            .animate-bottom {
-  opacity: 0; /* Hide initially */
-  transform: translateY(40px); /* Move the element down */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Define the animation properties */
-}
             
             body {
                 font-family: "Times New Roman", Georgia, Serif;
@@ -102,7 +91,6 @@
 
 </head>
 <body>
-<div class="animate-bottom">
     <!-- Navbar (sit on top) -->
 <div class="w3-top">
     <div class="w3-bar w3-grey w3-padding w3-card" style="letter-spacing:4px;">
@@ -252,21 +240,7 @@
             }
         });
 
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener("scroll", animateElements);
 
-  function animateElements() {
-    const elements = document.querySelectorAll(".animate-bottom");
-    elements.forEach(function(element) {
-      const elementPosition = element.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (elementPosition < windowHeight * 0.8) {
-        element.classList.add("visible");
-      }
-    });
-  }
-});
         
     </script>
     
