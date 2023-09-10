@@ -347,7 +347,7 @@ window.addEventListener('scroll', handleScroll);
 // Initial check in case elements are already in the viewport
 handleScroll();
 
-        // Function to display the pop-up
+     // Function to display the pop-up
   function openPopup() {
     var popup = document.getElementById('popup');
     popup.style.display = 'block';
@@ -361,9 +361,8 @@ handleScroll();
 
   // Function to handle "Let's do it!" button click
   function doIt() {
-    // Add your custom logic here for when the user clicks "Let's do it!"
-    // For example, you can redirect the user to another page or perform an action.
-    alert("You clicked 'Let's do it!'");
+    // Redirect to the #contact link
+    window.location.href = "#contact";
     closePopup(); // Close the pop-up after handling the click
   }
 
